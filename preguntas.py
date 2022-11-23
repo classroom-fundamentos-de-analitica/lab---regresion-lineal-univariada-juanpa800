@@ -103,8 +103,6 @@ def pregunta_03():
     # Imprima el R^2 del modelo con 4 decimales
     print(reg.score(X_fertility, y_life).round(4))
 
-pregunta_03()
-
 def pregunta_04():
     """
     Particionamiento del conjunto de datos usando train_test_split.
