@@ -75,10 +75,10 @@ def pregunta_03():
     df = pd.read_csv('gm_2008_region.csv')
 
     # Asigne a la variable los valores de la columna `fertility`
-    X_fertility = df['fertility']
+    X_fertility = np.array(df['fertility']).reshape(-1, 1)
 
     # Asigne a la variable los valores de la columna `life`
-    y_life = df['life']
+    y_life = np.array(df['life']).reshape(-1, 1)
 
     # Importe LinearRegression
     from sklearn.linear_model import LinearRegression
